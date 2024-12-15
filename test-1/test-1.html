@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Movie: Pushpa</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2c3e50; /* Dark blue background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #34495e; /* Dark gray background */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Styling for navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+        }
+
+        /* Hover effect for navigation links */
+        nav a:hover {
+            background-color: #16a085; /* Green color when hovering */
+        }
+
+        /* Main Content Section Styling */
+        article, section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Article background color */
+        article {
+            background-color: #ecf0f1; /* Light gray background for the article */
+        }
+
+        /* Styling for the Cast Section */
+        #cast ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cast li {
+            padding: 5px;
+            font-size: 1.2em;
+        }
+
+        /* Styling for the Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Styling for table borders */
+        table, th, td {
+            border: 1px solid #bdc3c7;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Styling for the Form Section */
+        form {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Label styling for form inputs */
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        /* Input and textarea styling */
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+
+        /* Submit button styling */
+        form button {
+            background-color: #16a085;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for submit button */
+        form button:hover {
+            background-color: #1abc9c; /* Light green color when hovering */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50; /* Dark blue background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Favorite Movie: Pushpa</h1> <!-- Main heading displaying movie title -->
+    </header>
+
+    <!-- Navigation Bar Section -->
+    <nav>
+        <!-- Links to different sections of the webpage -->
+        <a href="#overview">Overview</a>
+        <a href="#cast">Cast</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <article id="overview">
+        <h2>Overview</h2>
+        <!-- Short description of the movie -->
+        <p>Pushpa is a mind-blowing thriller that tells the story of a mercurial protagonist navigating through themes of identity, class conflict, and survival in the forests of India. The film has crossed over 820 crores in revenue and captivated audiences with its intense action and powerful performances.</p>
+    </article>
+
+    <!-- Cast Section -->
+    <section id="cast">
+        <h2>Main Cast</h2>
+        <!-- List of main cast members -->
+        <ul>
+            <li>Allu Arjun (Pushpa Raj)</li>
+            <li>Rashmika Mandanna (Srivalli)</li>
+            <li>Sreeleela (Pooja)</li>
+        </ul>
+    </section>
+
+    <!-- Showtimes Table Section -->
+    <section>
+        <h2>Show Times</h2>
+        <table>
+            <!-- Table displaying showtimes -->
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>December 15, 2024</td>
+                    <td>3:00 PM</td>
+                    <td>Madanapalle Sri Krishna A.C Theatre</td>
+                </tr>
+                <tr>
+                    <td>December 16, 2024</td>
+                    <td>6:00 PM</td>
+                    <td>Sunil Theatre</td>
+                </tr>
+                <tr>
+                    <td>December 18, 2024</td>
+                    <td>8:00 PM</td>
+                    <td>Ravi Theatre</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Submit Your Reviews</h2>
+        <!-- Review form to collect user input -->
+        <form>
+            <!-- Input field for user's name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Input field for user's email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Textarea for user's review -->
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="6" required></textarea>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pushpa Movie Webpage. All Rights Reserved.</p> <!-- Copyright notice -->
+    </footer>
+
+</body>
+</html>
